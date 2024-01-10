@@ -707,13 +707,15 @@ export interface ApiNavBarNavBar extends Schema.SingleType {
     singularName: 'nav-bar';
     pluralName: 'nav-bars';
     displayName: 'NavBar';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    pages: Attribute.Enumeration<['Home', 'News', 'About', 'Contact']>;
     logo: Attribute.Media;
+    brand: Attribute.Media;
+    pages: Attribute.Component<'list.pages', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

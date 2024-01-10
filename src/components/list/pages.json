@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_list_pages",
+  "info": {
+    "displayName": "pages",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "page": {
+      "type": "string"
+    },
+    "page2": {
+      "type": "string"
+    }
+  }
+}
